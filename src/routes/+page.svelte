@@ -44,7 +44,7 @@
     // Save it to render on the page just for this example's sake
     key = keyLocal;
     message = source(`/notifications/${keyLocal}/read`, {
-      beacon: 3000
+      beacon: 1000
     }).select('message');
   }
 

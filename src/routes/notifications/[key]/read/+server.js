@@ -12,6 +12,7 @@ export async function POST({ request, params }) {
 
   return events({
     request,
+    timeout: 30000,
     async start({ emit, lock }) {
       // This is safe.
       // You can run logic all you want in here.
